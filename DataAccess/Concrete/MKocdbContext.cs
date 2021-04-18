@@ -10,19 +10,19 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=94.73.170.92;Database=MKocdb; User Id=oznkznc; Password=1234560_Ozaka.M; Trusted_Connection=True");
+            optionsBuilder.UseSqlServer(@"Data Source=94.73.170.92;Initial Catalog=MKocdb; User id=oznkznc; Password=1234560_Ozaka.M;");
         }
 
-        public DbSet<ArizaTablo> ArizaTablos { get; set; }
-        public DbSet<IslemTablo> IslemTablos { get; set; }
-        public DbSet<KurTablo> KurTablos { get; set; }
-        public DbSet<MusteriTablo> MusteriTablos { get; set; }
-        public DbSet<OdemeDetayTablo> OdemeDetayTablos { get; set; }
-        public DbSet<OdemeSekli> OdemeSeklis { get; set; }
-        public DbSet<OdemeTablo> OdemeTablos { get; set; }
-        public DbSet<ParcaTablo> ParcaTablos { get; set; }
-        public DbSet<SatisDetayTablo> SatisDetayTablos { get; set; }
-        public DbSet<SatisTablo> SatisTablos { get; set; }
-        public DbSet<TeknikTablo> TeknikTablos { get; set; }
+        public DbSet<ArizaTablo> ArizaTablo { get; set; }
+        public DbSet<IslemTablo> IslemTablo { get; set; }
+        public DbSet<KurTablo> KurTablo { get; set; }
+        public DbSet<MusteriTablo> MusteriTablo { get; set; }
+        public DbSet<OdemeDetayTablo> OdemeDetayTablo { get; set; }
+        public DbSet<OdemeSekli> OdemeSekli { get; set; }
+        public DbSet<OdemeTablo> OdemeTablo { get; set; }
+        public DbSet<ParcaTablo> ParcaTablo { get; set; }
+        public DbSet<SatisDetayTablo> SatisDetayTablo { get; set; }
+        public DbSet<SatisTablo> SatisTablo { get; set; }
+        public DbSet<TeknikTablo> TeknikTablo { get; set; }
     }
 }
