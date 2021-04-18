@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class SatisTablo
+    public class SatisTablo : IEntity
     {
         public int SatisID { get; set; }
         public string Konu { get; set; }

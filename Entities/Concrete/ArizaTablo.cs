@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class ArizaTablo
+    public class ArizaTablo : IEntity
     {
         public int ArizaID { get; set; }
         public string ArizaBilgisi { get; set; }

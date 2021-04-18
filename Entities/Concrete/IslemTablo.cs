@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class IslemTablo
+    public class IslemTablo : IEntity
     {
         public int IslemID { get; set; }
         public string YapilanIslem { get; set; }

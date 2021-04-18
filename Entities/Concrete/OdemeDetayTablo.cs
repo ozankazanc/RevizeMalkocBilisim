@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class OdemeDetayTablo
+    public class OdemeDetayTablo : IEntity
     {
         public int OdemeDetayID { get; set; }
         public decimal Tutar { get; set; }

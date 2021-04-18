@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class ParcaTablo
+    public class ParcaTablo : IEntity
     {
         public int ParcaID { get; set; }
         public string DegisenParca { get; set; }
