@@ -10,7 +10,7 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=94.73.170.92;Initial Catalog=MKocdb; User id=oznkznc; Password=1234560_Ozaka.M;");
+            optionsBuilder.UseSqlServer(@"Data Source=**;Initial Catalog=**; User id=**; Password=**;");
         }
 
         public DbSet<ArizaTablo> ArizaTablo { get; set; }
